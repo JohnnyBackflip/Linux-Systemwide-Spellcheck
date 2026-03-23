@@ -22,7 +22,10 @@ A system-wide AI-powered spellchecker for Linux using the Google Gemini API. Wor
    ```bash
    pip install -r requirements.txt
    ```
-   *Note: depending on your Linux distribution, you might need to install `xclip` or `xdotool` if `pyperclip` requires it natively.*
+   *Note: Depending on your Linux distribution, you might need to install `xclip` or `xdotool` if `pyperclip` requires it natively. For PyQt6 to load properly on X11/Wayland, you MUST have `libxcb-cursor0` installed on your system:*
+   ```bash
+   sudo apt install libxcb-cursor0
+   ```
 
 3. **Configure Autostart:**
    ```bash
